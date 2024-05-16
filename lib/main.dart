@@ -15,10 +15,12 @@ void main() async {
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
-  static const appcastURL = 'https://github.com/thavisin/testupgader';
+  // static const appcastURL =
+  //     'https://raw.githubusercontent.com/larryaasen/upgrader/master/test/testappcast_macos.xml';
   final upgrader = Upgrader(
-    storeController: UpgraderStoreController(
-        onMacOS: () => UpgraderAppcastStore(appcastURL: appcastURL)),
+    minAppVersion: "2.0.0",
+    // storeController: UpgraderStoreController(
+    //     onMacOS: () => UpgraderAppcastStore(appcastURL: appcastURL)),
     debugLogging: true,
   );
 
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
           upgrader: upgrader,
           child: Scaffold(
             appBar: AppBar(title: const Text('Upgrader Example')),
-            body: const Center(child: Text('Checking...')),
+            body: const Center(child: Text('eieieieieiei...')),
           )),
     );
   }
