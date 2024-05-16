@@ -15,8 +15,8 @@ void main() async {
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
-  // static const appcastURL =
-  //     'https://raw.githubusercontent.com/larryaasen/upgrader/master/test/testappcast_macos.xml';
+  static const appcastURL =
+      'https://raw.githubusercontent.com/larryaasen/upgrader/master/test/testappcast_macos.xml';
   final upgrader = Upgrader(
     minAppVersion: "2.0.0",
     storeController: UpgraderStoreController(
