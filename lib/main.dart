@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
   //     'https://raw.githubusercontent.com/larryaasen/upgrader/master/test/testappcast_macos.xml';
   final upgrader = Upgrader(
     minAppVersion: "2.0.0",
-    // storeController: UpgraderStoreController(
-    //     onMacOS: () => UpgraderAppcastStore(appcastURL: appcastURL)),
+    storeController: UpgraderStoreController(
+        onMacOS: () => UpgraderAppcastStore(appcastURL: appcastURL)),
     debugLogging: true,
   );
 
